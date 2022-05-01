@@ -2,6 +2,7 @@ package LinkedList;
 
 public class Node<T>{
     T data;
+    Node<T> prev = null;
     Node<T> next = null;
 
     public Node (T data){

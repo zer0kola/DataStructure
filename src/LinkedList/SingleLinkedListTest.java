@@ -11,7 +11,12 @@ public class SingleLinkedListTest {
         myList.printAll();
         System.out.println("---------------");
         myList.addNodeInside(5,1);
-
+        myList.addNodeInside(10,7);
+        myList.printAll();
+        System.out.println("---------------");
+        myList.deleteNode(1);
+        myList.deleteNode(3);
+        myList.deleteNode(10);
         myList.printAll();
     }
 }
