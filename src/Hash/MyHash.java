@@ -12,14 +12,14 @@ public class MyHash {
     }
 
     public boolean saveData(String key, String value) {
-        Integer address = this.hashFunc(key);
+        int address = this.hashFunc(key);
         if (this.hashTable[address] != null) {
             this.hashTable[address].value = value;
         } else{
             this.hashTable[address]=new Slot(value);
         }return true;
     }
-public String getData(String key){
+    public String getData(String key){
         int address = this.hashFunc(key);
         if (this.hashTable[address]!=null){
             return hashTable[address].value;
