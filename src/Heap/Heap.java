@@ -34,7 +34,7 @@ public class Heap {
         return true;
     }
 
-    public int pop() {
+    public Integer pop() {
         int returnedData, poppedIndex, leftChild, rightChild;
         if (this.heapArray != null) {
             returnedData = this.heapArray.get(1);
@@ -68,7 +68,7 @@ public class Heap {
                 }
             }
         }
-
+    return null;
     }
 
     public boolean moveUp(int insertIndex) {
